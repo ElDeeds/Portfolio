@@ -246,7 +246,7 @@ footer {
 
 .memojiImg {
   animation: morph 8s ease-in-out infinite;
-  background-image: url(/src/assets/portraitImg.webp);
+  background-image: url(/src/assets/memojiImg.webp);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
