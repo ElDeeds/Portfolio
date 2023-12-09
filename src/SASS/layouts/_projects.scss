@@ -1,0 +1,25 @@
+@use "../utils/variables" as *;
+
+/* Projets */
+
+.projectsContainer {
+    background-color: $color-secondary;
+    padding: 2% 0;
+    padding-bottom: 8%;
+    
+    &Title {
+      margin-left: 25%;
+      color: $color-hover;
+      font-size: 24px;
+
+      @media (max-width: 1052px) {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 1052px) {
+  }
+

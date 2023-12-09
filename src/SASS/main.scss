@@ -1,0 +1,16 @@
+@use "./base/base";
+
+@use "./utils/variables";
+@use "./utils/keyframes";
+
+@use "./layouts/header";
+@use "./layouts/footer";
+@use "./layouts/banner";
+@use "./layouts/projects";
+@use "./layouts/about";
+@use "./layouts/contact";
+
+@use "./components/card";
+@use "./components/popup";
+@use "./components/contactForm";
+

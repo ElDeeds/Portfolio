@@ -1,0 +1,48 @@
+@use "../utils/variables" as *;
+
+/* A propos */
+
+.aboutContainerTitle {
+    margin-left: 25%;
+    color: $color-hover;
+    font-size: 24px;
+    padding-top: 3%;
+  }
+  
+  .aboutContainerTextImg {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 5%;
+  
+    .aboutContainerText {
+      width: 95%;
+      padding-left: 5%;
+      color: $color-terciary;
+    }
+  }
+  
+  /* Media Query pour les écrans de moins de 1200px de large */
+  @media (max-width: 1052px) {
+    .aboutContainerTextImg {
+      flex-direction: column; 
+      align-items: center; 
+  
+      .aboutContainerText {
+        width: 100%; 
+        padding: 0; 
+        text-align: center; 
+      }
+    }
+  
+    .aboutContainerImg {
+      width: 90%;
+    }
+  
+    .aboutContainerTitle {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  

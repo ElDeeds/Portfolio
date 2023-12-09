@@ -1,0 +1,71 @@
+@use "../utils/variables" as *;
+// Popup.scss
+
+.popup {
+    &Container {
+      position: fixed;
+      background: rgba(0, 0, 0, 0.6);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+  
+    &Content {
+      position: relative;
+      background: $color-primary;
+      opacity: 0.95;
+      border-radius: 8px;
+      width: 50%;
+      animation: dropTop 0.2s linear;
+
+      @media (max-width: 1052px) {
+        width: 80%;
+      }
+    }
+
+    &Body {
+      margin-left: 4%;
+      margin-right: 4%;
+
+      p {
+        margin: 0;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        white-space: normal;
+      }
+    }
+  
+    &Header {
+      display: flex;
+      align-items: center;
+      padding: 2%;
+      padding-left: 4%;
+      background-color: $color-terciary;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      
+  
+      h3 {
+        margin: 0;
+        color: $color-secondary;
+        padding-right: 20%;
+      }
+  
+      &CloseButton {
+        cursor: pointer;
+        position: absolute;
+        margin: 0px;
+        right: 20px;
+        transform: scale(2);
+        color: $color-secondary;
+      }
+      
+    }
+
+  }
+  

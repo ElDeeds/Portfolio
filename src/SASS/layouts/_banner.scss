@@ -1,0 +1,149 @@
+@use "../utils/keyframes" as *;
+@use "../utils/variables" as *;
+
+
+/* Banner */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:$color-secondary ;
+    padding-top: 8%;
+    padding-bottom: 5%;
+  }
+
+
+  .bannerTextImg {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  
+  
+  .bannerText {
+    color: $color-terciary;
+    padding-bottom: 6%;
+  }
+  
+  .bannerText h1 {
+    font-size: 50px;
+  }
+  
+  .bannerText p {
+    font-size: 25px;
+  }
+  
+  .bannerSkills {
+    display: flex;
+    align-self: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-left: -5%;
+  }
+  
+  .bannerSkillsTitle {
+    display: flex;
+    align-items: center;
+    white-space: nowrap ;
+    border-right: solid $color-terciary ;
+    padding-right: 3%;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .logo {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .bannerSkillsLogos {
+    display: flex;
+    margin-left: 5%;
+    white-space: nowrap;
+  }
+  
+  .bannerSkillsLogos img {
+    transition: transform 0.3s ease; 
+  }
+  
+  
+  .memojiImg {
+      animation: morph 8s ease-in-out infinite;
+      background-image: url(/src/assets/portraitImg.webp);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 3px solid $color-terciary;
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      height: 20rem;
+      position: relative;
+      transition: all 1s ease-in-out;
+      width: 20rem;
+      margin-left: 3%;
+  }  
+  
+  
+  /* Ajouter des media queries pour l'affichage à 900px et moins */
+  @media (max-width: 900px) {
+    .bannerTextImg {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .bannerText {
+      max-width: 80%;
+    }
+  
+    .bannerSkills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+    }
+  
+    .bannerSkillsTitle{
+    border-bottom: solid $color-terciary 1px;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 0;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 8%;
+    padding-bottom: 2%;
+  }
+  
+    .bannerSkillsLogos{
+      margin-left: -4%;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .bannerSkillsLogos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bannerSkillsLogos2{
+      margin-left: 0;
+    }
+
+    .bannerText h1 {
+      font-size: 40px;
+    }
+
+    .bannerText p {
+      font-size: 20px;
+    }
+
+    .memojiImg {
+      width: 18rem;
+      height: 18rem;
+    }
+  
+  }

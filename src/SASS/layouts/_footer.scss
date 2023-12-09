@@ -1,0 +1,26 @@
+@use "../utils/variables" as *;
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: $color-terciary;
+  }
+  
+  .footerText {
+    margin-left: 10%;
+    color: $color-primary;
+    font-weight: 700;
+  }
+  
+  .gitLogo {
+    margin-right: 15%;
+  }
+  
+  .gitLink {
+    margin-right: 15%;
+  }
